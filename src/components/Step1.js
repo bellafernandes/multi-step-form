@@ -1,4 +1,6 @@
 import React from "react";
+import EmailField from "./form/EmailField";
+import PasswordField from "./form/PasswordField";
 
 export default function Step1() {
   return (
@@ -7,9 +9,13 @@ export default function Step1() {
         <h1 className="text-4xl font-bold text-zinc-700">Title</h1>
         <h2 className="text-2xl font-semibold text-zinc-500">Text</h2>
       </div>
-      <form>
 
-        {/* Email input */}
+      <EmailField />
+      <PasswordField />
+
+      {/*<form>
+
+        Email input 
         <div class="relative z-0 w-1/3 mx-auto mt-20">
           <input
             type="email"
@@ -25,7 +31,7 @@ export default function Step1() {
           </label>
         </div>
 
-        {/* Password input */}
+         Password input 
         <div class="relative z-0 w-1/3 mx-auto mt-20">
           <input
             type="password"
@@ -40,7 +46,7 @@ export default function Step1() {
             Password
           </label>
         </div>
-      </form>
+      </form>*/}
     </div>
   );
 }
