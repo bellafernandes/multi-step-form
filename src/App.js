@@ -6,11 +6,12 @@ import "react-step-progress/dist/index.css";
 
 import Step1 from "./components/Step1";
 import Step2 from "./components/Step2";
+import Step3 from "./components/Step3";
 
 export default function App() {
   const step1Content = <Step1 />;
   const step2Content = <Step2 />;
-  const step3Content = <h1></h1>;
+  const step3Content = <Step3 />;
 
   // setup step validators, will be called before proceeding to the next step
   function step2Validator() {
