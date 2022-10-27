@@ -4,9 +4,12 @@ import StepProgressBar from "react-step-progress";
 // import the stylesheet
 import "react-step-progress/dist/index.css";
 
+import Step1 from "./components/Step1";
+import Step2 from "./components/Step2";
+
 export default function App() {
-  const step1Content = <h1></h1>;
-  const step2Content = <h1></h1>;
+  const step1Content = <Step1 />;
+  const step2Content = <Step2 />;
   const step3Content = <h1></h1>;
 
   // setup step validators, will be called before proceeding to the next step
@@ -18,7 +21,7 @@ export default function App() {
     // return a boolean
   }
   return (
-    <div className="App">
+    <div className="App px-20">
       <StepProgressBar
         startingStep={0}
         steps={[
